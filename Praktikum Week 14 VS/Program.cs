@@ -67,6 +67,12 @@ namespace Praktikum_Week_14_VS
             Console.Write("Input : ");
             int angka = Convert.ToInt32(Console.ReadLine());
             int faktor = 0;
+            while (angka < 2)
+            {
+                Console.WriteLine("Input Terlalu Kecil ! ");
+                Console.WriteLine("Input : ");
+                angka = Convert.ToInt32(Console.ReadLine());
+            }
             for (int i = 1; i <= angka; i++)
             {
                 if (angka % i == 0)
